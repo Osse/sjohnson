@@ -4,9 +4,10 @@ project(sjohnson)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD 14)
 
 find_package(Qt5Widgets)
 
-add_executable(sjohnson WIN32 main.cpp pic.qrc)
+add_executable(sjohnson WIN32 main.cpp label.cpp pic.qrc)
 target_link_libraries(sjohnson Qt5::Widgets)
